@@ -5,7 +5,7 @@
 
         public static void AddHomeEndpoints(this IEndpointRouteBuilder endpoints)
         {
-            endpoints.MapGet("/home", async context =>
+            endpoints.MapGet("/", async context =>
             {
                 await context.Response.WriteAsync("Hello World!");
             });
